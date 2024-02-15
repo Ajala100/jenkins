@@ -18,6 +18,12 @@ pipeline{
                   echo 'Step Two is executing'
                   }
                }
+
+         stage('Four'){
+                steps {
+                   input('do you want to proceed')
+                      }
+                }
     }
 
      post {
